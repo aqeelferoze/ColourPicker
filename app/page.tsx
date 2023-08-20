@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 function ColorPicker() {
-  const [selectedColor, setSelectedColor] = useState('#fff'); 
+  const [selectedColor, setSelectedColor] = useState('gray'); 
 
   const handleColorChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
     setSelectedColor(event.target.value);
